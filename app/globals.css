@@ -1,0 +1,120 @@
+:root {
+  --primary: #6d28d9;
+  --primary-light: #8b5cf6;
+  --text: #111827;
+  --muted: #6b7280;
+  --bg: #fafafc;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: Inter, Arial, sans-serif;
+}
+
+.container {
+  width: min(1100px, 90%);
+  margin: 0 auto;
+}
+
+.nav {
+  padding: 24px 0;
+}
+
+.nav-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.brand {
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+
+.brand span {
+  color: var(--primary);
+}
+
+.hero {
+  display: flex;
+  min-height: 85vh;
+  align-items: center;
+}
+
+.hero-content {
+  max-width: 720px;
+}
+
+.badge {
+  display: inline-block;
+  margin-bottom: 24px;
+  padding: 8px 14px;
+  border-radius: 999px;
+  background: #f3e8ff;
+  color: var(--primary);
+  font-weight: 600;
+}
+
+h1 {
+  margin-bottom: 20px;
+  font-size: 4rem;
+  line-height: 1.05;
+}
+
+.gradient {
+  background: linear-gradient(135deg, var(--primary), var(--primary-light));
+  background-clip: text;
+  color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.hero p {
+  margin-bottom: 32px;
+  color: var(--muted);
+  font-size: 1.2rem;
+  line-height: 1.8;
+}
+
+.buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.btn {
+  padding: 14px 28px;
+  border-radius: 12px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.btn-primary {
+  background: var(--primary);
+  color: #fff;
+}
+
+.btn-secondary {
+  border: 1px solid #ddd;
+  color: var(--text);
+}
+
+.footer {
+  padding: 50px 0;
+  border-top: 1px solid #eee;
+  color: var(--muted);
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2.7rem;
+  }
+}
